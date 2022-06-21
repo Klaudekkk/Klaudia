@@ -1,0 +1,13 @@
+{
+  "name": "azure",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "mssql": "^8.1.2",
+    "mssql-connection-string": "^0.3.2"
+  }
+}
