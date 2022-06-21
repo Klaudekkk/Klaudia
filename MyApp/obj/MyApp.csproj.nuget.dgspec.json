@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Klaudia\\Desktop\\MyApp\\RaspPi\\MyApp\\MyApp.csproj": {}
+    "E:\\Rasp\\Klaudia\\MyApp\\MyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Klaudia\\Desktop\\MyApp\\RaspPi\\MyApp\\MyApp.csproj": {
+    "E:\\Rasp\\Klaudia\\MyApp\\MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Klaudia\\Desktop\\MyApp\\RaspPi\\MyApp\\MyApp.csproj",
+        "projectUniqueName": "E:\\Rasp\\Klaudia\\MyApp\\MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "C:\\Users\\Klaudia\\Desktop\\MyApp\\RaspPi\\MyApp\\MyApp.csproj",
+        "projectPath": "E:\\Rasp\\Klaudia\\MyApp\\MyApp.csproj",
         "packagesPath": "C:\\Users\\Klaudia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Klaudia\\Desktop\\MyApp\\RaspPi\\MyApp\\obj\\",
+        "outputPath": "E:\\Rasp\\Klaudia\\MyApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Klaudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,31 +79,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-arm",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.linux-arm",
-              "version": "[5.0.17, 5.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-arm": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
