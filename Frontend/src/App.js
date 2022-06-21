@@ -15,6 +15,11 @@ const App = () => {
     backgroundColor: data == 'wolne' ? "green" : "red"
   }
   return (
+
+
+
+
+      
     <div style={styles} className="states">
       <h1>{data}</h1>
       <button onClick={() => setFetch(prevFetchData => !prevFetchData)}>Fetch Data</button>
