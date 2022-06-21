@@ -19,6 +19,7 @@ namespace CCheck{
             controller.OpenPin(GREEN_PIN, PinMode.Output);
             controller.OpenPin(RED_PIN, PinMode.Output);
             controller.OpenPin(PIR_PIN, PinMode.Input);
+            controller.Write(GREEN_PIN, PinValue.High);
 
             controller.RegisterCallbackForPinValueChangedEvent(PIR_PIN, PinEventTypes.Rising, (sender, args) =>
             {
