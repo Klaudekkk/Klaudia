@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios"
+import toilet from './toilet.png'
 
 const App = () => {
-  const [data, setData] = useState("Oczekiwanie na klikniecie");
+  const [data, setData] = useState("Kliknij i sprawdź czy możesz iść!");
   const [fetchData, setFetch] = useState(false);
   var styles = {}
   useEffect(() => {
@@ -12,13 +13,16 @@ const App = () => {
     }
   }, [fetchData]);
 
-  if (data == "Oczekiwanie na klikniecie") {
-    styles = { backgroundColor: "yellow" }
+  if(data == 'Toaleta jest wolna, powodzenia!'){
+    styles = {
+      color: "green"
+    }
   }
   else {
     styles = {
-      backgroundColor: data == 'wolne' ? "green" : "red"
+      Color:"red",
     }
+
   }
   return (
       <html>
@@ -29,13 +33,15 @@ const App = () => {
           <center>
             <h1>Twój asystent toaletowy</h1>
           </center>
-
         </div>
         <div className="main">
           <div style={styles} className="states">
             <h1>{data}</h1>
-            <button onClick={() => setFetch(prevFetchData => !prevFetchData)}>Fetch Data</button>
+            <center><img src={toilet} width={200}/></center>
+            <button className="fill" onClick={() => setFetch(prevFetchData => !prevFetchData)}>Sprawdzam!</button>
           </div>
+
+
         </div>
         <div className="footer">Patryk Żuchowski & Klaudia Wojciechowska</div>
       </div>

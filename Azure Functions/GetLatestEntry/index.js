@@ -6,12 +6,12 @@ module.exports = async function (context, req) {
         const result = await sql.query('select top 1 time_end from BreakTime order by time_start desc');
         if (result.recordset[0].time_end != null) {
             context.res.json({
-                state: 'wolne'
+                state: 'Toaleta jest wolna, powodzenia!'
             });
         }
         else {
             context.res.json({
-                state: 'zajete'
+                state: 'Toaleta jest zajęta, wytrzymaj jeszcze!'
             });
         }
     } catch (e) {
